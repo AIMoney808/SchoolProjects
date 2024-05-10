@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="assortment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="shelf"/>
+        <xs:element ref="library"/>
+        <xs:element ref="selection"/>
+        <xs:element ref="tracks"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="shelf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name"/>
+        <xs:element maxOccurs="unbounded" ref="book"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="book">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="title"/>
+        <xs:element ref="author"/>
+        <xs:element ref="pubdate"/>
+        <xs:element ref="genre"/>
+        <xs:element ref="value"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pubdate" type="xs:integer"/>
+  <xs:element name="library">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name"/>
+        <xs:element maxOccurs="unbounded" ref="game"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="game">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="title"/>
+        <xs:element ref="publisher"/>
+        <xs:element ref="releaseDate"/>
+        <xs:element ref="genre"/>
+        <xs:element ref="value"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="publisher" type="xs:string"/>
+  <xs:element name="selection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name"/>
+        <xs:element maxOccurs="unbounded" ref="movie"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="movie">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="title"/>
+        <xs:element ref="producer"/>
+        <xs:element ref="releaseDate"/>
+        <xs:element ref="genre"/>
+        <xs:element ref="runTime"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="producer" type="xs:string"/>
+  <xs:element name="runTime" type="xs:string"/>
+  <xs:element name="tracks">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name"/>
+        <xs:element maxOccurs="unbounded" ref="album"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="album">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="title"/>
+        <xs:element ref="author"/>
+        <xs:element ref="releaseDate"/>
+        <xs:element ref="genre"/>
+        <xs:element ref="trackCount"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="trackCount" type="xs:integer"/>
+  <xs:element name="name" type="xs:string"/>
+  <xs:element name="title" type="xs:string"/>
+  <xs:element name="author" type="xs:string"/>
+  <xs:element name="genre" type="xs:string"/>
+  <xs:element name="value" type="xs:string"/>
+  <xs:element name="releaseDate" type="xs:date"/>
+</xs:schema>

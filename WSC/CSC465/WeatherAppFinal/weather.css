@@ -1,0 +1,63 @@
+/* 	ADV WEB DEVELOPMENT
+	  Final Project: Weather App
+	  
+	  Author: Aaron Mahoney
+	  Date:   4/16/2024
+	  
+	  The main sorce for this project was: chatgpt https://chat.openai.com/
+	  Weather data pulled from Open Weather API https://openweathermap.org/api
+	  
+	  Filename: weather.css
+  */ 
+  
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  background-image: url("bliss-update.jpg"); /* image from https://arstechnica.com/gadgets/2023/06/i-just-found-out-that-microsoft-made-a-4k-version-of-the-windows-xp-wallpaper/  */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #000000;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#weatherInfo {
+  margin: 20px 200px 0 200px;
+  width: 320px;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+img {
+  z-index: -1;
+}
+
+p {
+  white-space: pre;
+  position: relative;
+  
+}

@@ -1,0 +1,99 @@
+{
+    "inventory": {
+        "name": "Inventory List of Items in the House",
+        "room": [
+            {
+                "item": [
+                    {
+                        "roomName": "Living Room",
+                        "category": "Furniture",
+                        "itemType": "Recliner",
+                        "itemColor": "Brown Leather",
+                        "itemSize": "Large",
+                        "quantity": 1
+                    },
+                    {
+                        "roomName": "Living Room",
+                        "category": "Furniture",
+                        "itemType": "Recliner",
+                        "itemColor": "Gray Green",
+                        "itemSize": "Large",
+                        "quantity": 1
+                    },
+                    {
+                        "roomName": "Living Room",
+                        "category": "Furniture",
+                        "itemType": "Sofa",
+                        "itemColor": "Brown Leather",
+                        "itemSize": "Large",
+                        "quantity": 1
+                    }
+                ]
+            },
+            {
+                "item": [
+                    {
+                        "roomName": "Dining Room",
+                        "category": "Furniture",
+                        "itemType": "Table",
+                        "itemColor": "Cherrywood",
+                        "itemSize": "Large",
+                        "quantity": 1
+                    },
+                    {
+                        "roomName": "Dining Room",
+                        "category": "Furniture",
+                        "itemType": "CupBoard",
+                        "itemColor": "Wood",
+                        "itemSize": "Tall",
+                        "quantity": 1
+                    },
+                    {
+                        "roomName": "Dining Room",
+                        "category": "Furniture",
+                        "itemType": "Chair",
+                        "itemColor": "Med Brown W/ Tan Seat",
+                        "itemSize": "Medium",
+                        "quantity": 6
+                    }
+                ]
+            },
+            {
+                "item": [
+                    {
+                        "roomName": "Bedroom",
+                        "category": "Furniture",
+                        "itemType": "Shelf",
+                        "itemColor": "Press Board",
+                        "itemSize": "Tall",
+                        "quantity": 1
+                    },
+                    {
+                        "roomName": "Bedroom",
+                        "category": "Furniture",
+                        "itemType": "Bed",
+                        "itemColor": "Black",
+                        "itemSize": "Large",
+                        "quantity": 1
+                    },
+                    {
+                        "roomName": "Bedroom",
+                        "category": "Furniture",
+                        "itemType": "Chair",
+                        "itemColor": "Black",
+                        "itemSize": "Medium",
+                        "quantity": 1
+                    },
+                    {
+                        "roomName": "Bedroom",
+                        "category": "Furniture",
+                        "itemType": "Desk",
+                        "itemColor": "Black",
+                        "itemSize": "Medium",
+                        "quantity": 1
+                    }
+                ]
+            }
+        ]
+    }
+}

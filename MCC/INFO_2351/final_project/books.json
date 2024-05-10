@@ -1,0 +1,42 @@
+{
+    "shelf": {
+        "name": "Books on the Shelf",
+        "book": [
+            {
+                "title": "Mortal Engines",
+                "author": "Philip Reeve",
+                "pubdate": 2001,
+                "genre": "SciFi",
+                "value": "$9.99"
+            },
+            {
+                "title": "Shadow of the Torturer",
+                "author": "Gene Wolf",
+                "pubdate": 1980,
+                "genre": "SciFi",
+                "value": "$19.99"
+            },
+            {
+                "title": "Treasure Island",
+                "author": "Robert Luis Stevenson",
+                "pubdate": 1947,
+                "genre": "AdvFi",
+                "value": "$12.99"
+            },
+            {
+                "title": "The Dark Tower: The Gunslinger",
+                "author": "Stephen King",
+                "pubdate": 1982,
+                "genre": "Dark Fantasy",
+                "value": "$15.97"
+            },
+            {
+                "title": "Percy Jackson and the Olympians: The Lightning Thief",
+                "author": "Rick Riordan",
+                "pubdate": 2005,
+                "genre": "Greek Myth/Fiction",
+                "value": "$5.97"
+            }
+        ]
+    }
+}

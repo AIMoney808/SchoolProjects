@@ -1,0 +1,44 @@
+{
+    "library": {
+        "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "xsi:noNamespaceSchemaLocation": "games.xsd",
+        "name": "Games in the Library",
+        "game": [
+            {
+                "title": "Elden Ring",
+                "publisher": "FromSoftware Inc.",
+                "releaseDate": "2022-02-24",
+                "genre": "Action/RPG",
+                "value": "$59.99"
+            },
+            {
+                "title": "Borderlands",
+                "publisher": "2K",
+                "releaseDate": "2009-10-20",
+                "genre": "Action/RPG",
+                "value": "$29.99"
+            },
+            {
+                "title": "Risk of Rain 2",
+                "publisher": "Gearbox Publishing",
+                "releaseDate": "2020-08-11",
+                "genre": "Action/Indie",
+                "value": "$24.99"
+            },
+            {
+                "title": "Hardspace: Shipbreaker",
+                "publisher": "Focus Entertainment",
+                "releaseDate": "2020-06-16",
+                "genre": "Simulation",
+                "value": "$34.99"
+            },
+            {
+                "title": "Stardew Valley",
+                "publisher": "ConcernedApe",
+                "releaseDate": "2016-02-26",
+                "genre": "Indie/RPG/Simulation",
+                "value": "$15.99"
+            }
+        ]
+    }
+}

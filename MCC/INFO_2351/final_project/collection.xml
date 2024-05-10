@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="collection.xslt"?>
+<assortment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="collection.xsd">
+    <!--books-->
+    <shelf>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Books on the Shelf</name>
+        <book xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <title>Mortal Engines</title>
+            <author>Philip Reeve</author>
+            <pubdate>2001</pubdate>
+            <genre>SciFi</genre>
+            <value>$9.99</value>
+        </book>
+        <book>
+            <title>Shadow of the Torturer</title>
+            <author>Gene Wolf</author>
+            <pubdate>1980</pubdate>
+            <genre>SciFi</genre>
+            <value>$19.99</value>
+        </book>
+        <book>
+            <title>Treasure Island</title>
+            <author>Robert Luis Stevenson</author>
+            <pubdate>1947</pubdate>
+            <genre>AdvFi</genre>
+            <value>$12.99</value>
+        </book>
+        <book>
+            <title>The Dark Tower: The Gunslinger</title>
+            <author>Stephen King</author>
+            <pubdate>1982</pubdate>
+            <genre>Dark Fantasy</genre>
+            <value>$15.97</value>
+        </book>
+        <book>
+            <title>Percy Jackson and the Olympians: The Lightning Thief</title>
+            <author>Rick Riordan</author>
+            <pubdate>2005</pubdate>
+            <genre>Greek Myth/Fiction</genre>
+            <value>$5.97</value>
+        </book>
+    </shelf>
+
+    <!--games-->
+    <library>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Games in the Library</name>
+        <game xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <title>Elden Ring</title>
+            <publisher>FromSoftware Inc.</publisher>
+            <releaseDate>2022-02-24</releaseDate>
+            <genre>Action/RPG</genre>
+            <value>$59.99</value>
+        </game>
+        <game xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <title>Borderlands</title>
+            <publisher>2K</publisher>
+            <releaseDate>2009-10-20</releaseDate>
+            <genre>Action/RPG</genre>
+            <value>$29.99</value>
+        </game>
+        <game xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <title>Risk of Rain 2</title>
+            <publisher>Gearbox Publishing</publisher>
+            <releaseDate>2020-08-11</releaseDate>
+            <genre>Action/Indie</genre>
+            <value>$24.99</value>
+        </game>
+        <game xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <title>Hardspace: Shipbreaker</title>
+            <publisher>Focus Entertainment</publisher>
+            <releaseDate>2020-06-16</releaseDate>
+            <genre>Simulation</genre>
+            <value>$34.99</value>
+        </game>
+        <game xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <title>Stardew Valley</title>
+            <publisher>ConcernedApe</publisher>
+            <releaseDate>2016-02-26</releaseDate>
+            <genre>Indie/RPG/Simulation</genre>
+            <value>$15.99</value>
+        </game>
+    </library>
+
+    <!--movies-->
+    <selection>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Movies in the selection</name>
+        <movie xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <title>Shrek</title>
+            <producer>DreamWorks Animation</producer>
+            <releaseDate>2001-04-22</releaseDate>
+            <genre>Comedy/Fantasy</genre>
+            <runTime>1h 30m</runTime>
+        </movie>
+        <movie xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <title>The Matrix</title>
+            <producer>Warner Bros. Pictures</producer>
+            <releaseDate>1999-03-31</releaseDate>
+            <genre>Action/SciFi</genre>
+            <runTime>2h 16m</runTime>
+        </movie>
+        <movie xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <title>Underworld</title>
+            <producer>Sony Pictures</producer>
+            <releaseDate>2003-09-19</releaseDate>
+            <genre>Action/Horror</genre>
+            <runTime>2h 1m</runTime>
+        </movie>
+        <movie xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <title>Terminator 2: Judgment Day</title>
+            <producer>TriStar Pictures</producer>
+            <releaseDate>1991-06-03</releaseDate>
+            <genre>Action/Sci-fi</genre>
+            <runTime>2h 15m</runTime>
+        </movie>
+        <movie xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <title>Back to the Future</title>
+            <producer>Universal Pictures</producer>
+            <releaseDate>1985-07-03</releaseDate>
+            <genre>Comedy/Sci-fi</genre>
+            <runTime>1h 56m</runTime>
+        </movie>
+    </selection>
+
+    <!--music-->
+    <tracks>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Albums in the Mix</name>
+        <album xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <title>Chaotic Dreams</title>
+            <author>salad</author>
+            <releaseDate>2021-12-03</releaseDate>
+            <genre>Ambient/Drum+Bass</genre>
+            <trackCount>13</trackCount>
+        </album>
+        <album xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <title>Random Access Memories</title>
+            <author>Daft Punk</author>
+            <releaseDate>2013-05-17</releaseDate>
+            <genre>Disco/funk</genre>
+            <trackCount>13</trackCount>
+        </album>
+        <album xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <title>Nu Radio!</title>
+            <author>Deko</author>
+            <releaseDate>2021-12-23</releaseDate>
+            <genre>Hip-Hop/Rap</genre>
+            <trackCount>33</trackCount>
+        </album>
+        <album xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <title>The Maze To Nowhere</title>
+            <author>Lorn</author>
+            <releaseDate>2014-08-27</releaseDate>
+            <genre>Dance/Electronic</genre>
+            <trackCount>12</trackCount>
+        </album>
+        <album xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <title>vignette</title>
+            <author>Frums</author>
+            <releaseDate>2020-07-03</releaseDate>
+            <genre>Electronic</genre>
+            <trackCount>20</trackCount>
+        </album>
+    </tracks>
+</assortment>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="inventory-1-1.xsl"?>
+<inventory>
+    <name>Inventory List of RPG books in the Warehouse</name>    
+    <book>
+        <link><a href="images/rifter32.jpg">Rifter 32 book cover</a></link>
+        <title>Title: The Rifter #32</title>
+        <year>Year Published: 2005</year>
+        <price>Price: $9.95</price>
+        <printing>Printing: 4th</printing>
+        <ship_weight>Shipping_weight: 1.00 pounds</ship_weight>
+        <isbn-10>ISBN-10: 157457-156-7</isbn-10>
+        <isbn-13></isbn-13>
+        <in_stock>Number of books in stock: 25</in_stock>
+    </book>
+    <book>
+        <link><a href="images/rifter34.jpg">Rifter 34 book cover</a></link>
+        <title>Title: The Rifter #34</title>
+        <year>Year Published: 2006</year>
+        <price>Price: $9.95</price>
+        <printing>Printing: 1st</printing>
+        <ship_weight>Shipping Weight: 1.00 pounds</ship_weight>
+        <isbn-10>ISBN-10: 157457-161-3</isbn-10>
+        <isbn-13></isbn-13>
+        <in_stock>Number of books in stock: 21</in_stock>
+    </book>
+    <book>
+        <link><a href="images/rifter36.jpg">Rifter 36 book cover</a></link>
+        <title>Title: The Rifter #36</title>
+        <year>Year Published: 2006</year>
+        <price>Price: $9.95</price>
+        <printing>Printing: 2nd</printing>
+        <ship_weight>Shipping Weight: 1.00 pounds</ship_weight>
+        <isbn-10>ISBN-10: 157457-168-0</isbn-10>
+        <isbn-13></isbn-13>
+        <in_stock>Number of books in stock: 6</in_stock>
+    </book>    
+    <book>
+        <link><a href="images/rifter44.jpg">Rifter 44 book cover</a></link>
+        <title>Title: The Rifter #44</title>
+        <year>Year Published: 2008</year>
+        <price>Price: $10.95</price>
+        <printing>Printing: 1st</printing>
+        <ship_weight>Shipping Weight: 1.00 pounds</ship_weight>
+        <isbn-10>ISBN-10: 1-57457-141-9</isbn-10>
+        <isbn-13>ISBN-13: 978-1-57457-141-7</isbn-13>
+        <in_stock>Number of books in stock: 15</in_stock>
+    </book>    
+    <book>
+        <link><a href="images/rifter46.jpg">Rifter 46 book cover</a></link>
+        <title>Title: The Rifter #46</title>
+        <year>Year Published: 2009</year>
+        <price>Price: $11.95</price>
+        <printing>Printing: 3rd</printing>
+        <ship_weight>Shipping Weight: 1.00 pounds</ship_weight>
+        <isbn-10>ISBN-10: 1-57457-143-5</isbn-10>
+        <isbn-13>ISBN-13: 978-1-57457-143-1</isbn-13>
+        <in_stock>Number of books in stock: 13</in_stock>
+    </book>
+    <book>
+        <link><a href="images/rifter48.jpg">Rifter 48 book cover</a></link>
+        <title>Title: The Rifter #48</title>
+        <year>Year Published: 2009</year>
+        <price>Price: $11.95</price>
+        <printing>Printing: 1st</printing>
+        <ship_weight>Shipping Weight: 1.00 pounds</ship_weight>
+        <isbn-10>ISBN-10: 1-57457-148-6</isbn-10>
+        <isbn-13>ISBN-13: 978-1-57457-148-6</isbn-13>
+        <in_stock>Number of books in stock: 29</in_stock>        
+    </book>
+    <book>
+        <link><a href="images/rifter53.jpg">Rifter 53 book cover</a></link>
+        <title>Title: The Rifter #53</title>
+        <year>Year Published: 2011</year>
+        <price>Price: $11.95</price>
+        <printing>Printing: 1st</printing>
+        <ship_weight>Shipping Weight: 1.00 pounds</ship_weight>
+        <isbn-10>ISBN-10: 1-57457-190-7</isbn-10>
+        <isbn-13>ISBN-13: 978-1-57457-190-5</isbn-13>
+        <in_stock>Number of books in stock: 12</in_stock>
+    </book>
+    <book>
+        <link><a href="images/rifter56.jpg">Rifter 56 book cover</a></link>
+        <title>Title: The Rifter 56</title>
+        <year>Year Published: 2011</year>
+        <price>Price: $11.95</price>
+        <printing>Printing: 2nd</printing>
+        <ship_weight>Shipping Weight: 1.00 pounds</ship_weight>
+        <isbn-10>ISBN-10: 1-57457-193-1</isbn-10>
+        <isbn-13>ISBN-13: 978-1-57457-193-6</isbn-13>
+        <in_stock>Number of books in stock: 35</in_stock>
+    </book>
+    <book>
+        <link><a href="images/darkplaces.jpg">Dead Reign: Dark Places book cover</a></link>
+        <title>Title: Dead Reign: Dark Places</title>
+        <year>Year Published: 2009</year>
+        <price>Price: $12.95</price>
+        <printing>Printing: 3rd</printing>
+        <ship_weight>Shipping Weight: 1.00 pounds</ship_weight>
+        <isbn-10>ISBN-10: 1-57457-176-1</isbn-10>
+        <isbn-13>ISBN-13: 978-1-57457-176-9</isbn-13>
+        <in_stock>Number of books in stock: 5</in_stock>
+    </book>
+    <book>
+        <link><a href="images/civilgone.jpg">Dead Reign: Civilization Gone book cover</a></link>
+        <title>Title: Dead Reign: Civilization Gone</title>
+        <year>Year Published: 2009</year>
+        <price>Price: $12.95</price>
+        <printing>Printing: 3rd</printing>
+        <ship_weight>Shipping Weight: 1.00 pounds</ship_weight>
+        <isbn-10>ISBN-10: 157457-146-X</isbn-10>
+        <isbn-13>ISBN-13: 978-1-57457-146-2</isbn-13>
+        <in_stock>Number of books in stock: 8</in_stock>
+    </book> 
+    <book>
+        <link><a href="images/bts.jpg">Beyond the Supernatural book cover</a></link>
+        <title>Title: Beyond the Supernatural: 2nd Edition RPG</title>
+        <year>Year Published: 2005</year>
+        <price>Price: $24.95</price>
+        <printing>Printing: 2nd</printing>
+        <ship_weight>Shipping Weight: 3.00 pounds</ship_weight>
+        <isbn-10>ISBN-10:157457-083-8</isbn-10>
+        <isbn-13></isbn-13>
+        <in_stock>Number of books in stock: 28</in_stock>
+    </book>
+</inventory>

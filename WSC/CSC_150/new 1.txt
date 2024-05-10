@@ -1,0 +1,9 @@
+   int userInput;
+   cin >> numIn;
+   
+   for (int i = 0; i < numIn; i++){
+      cin >> userInput;
+      
+      cout << "quantity = " << userInput << endl;
+      
+   }

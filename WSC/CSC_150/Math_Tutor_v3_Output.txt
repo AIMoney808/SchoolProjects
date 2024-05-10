@@ -1,0 +1,428 @@
+MathTutor Output and summary
+
+Aaron Mahoney
+CSC 150
+12/9/2022
+
+Replit access link:
+https://replit.com/join/pughhkyohc-aamaho01
+
+Summary:
+For the assignment MathTutor_V3 I have been able to figure out most of the modifications you asked 
+of us without many problems. When I had issues, I would get help from other classmates or examples 
+online. The problem I had the most trouble with was getting the DisplayStatusReport function 
+to work correctly. 
+
+
+
+Standard output:
+
++-------------------------------------------+
+|                 Math Tutor                |
++-------------------------------------------+
+
+Please enter your first name: Aaron M.
+
+Hello Aaron M.!
+You get 3 attempts per question.
+Now let the fun begin!
+
+==========================
+  Simple Math Tutor Menu  
+==========================
+   1 = (+) Addition
+   2 = (-) Subraction
+   3 = (x) Multiplication
+   4 = (/) Divide
+--------------------------
+   5 = Status Report
+   6 = Save Current Game
+   7 = Load Previous Game
+   8 = Reset Game
+--------------------------
+   0 = Quit
+--------------------------
+
+Enter choice: 1
+
+#1  What does 6+1 = 3
+    Sorry that was incorrect.
+    You have 2 attempts left.
+
+#1  What does 6+1 = 3
+    Sorry that was incorrect.
+    You have 1 attempts left.
+
+#1  What does 6+1 = 3
+    Sorry, you are out of attempts.
+    The correct answer is 7.
+
+******************************************
+* Please press the enter key to continue *
+******************************************
+
+==========================
+  Simple Math Tutor Menu  
+==========================
+   1 = (+) Addition
+   2 = (-) Subraction
+   3 = (x) Multiplication
+   4 = (/) Divide
+--------------------------
+   5 = Status Report
+   6 = Save Current Game
+   7 = Load Previous Game
+   8 = Reset Game
+--------------------------
+   0 = Quit
+--------------------------
+
+Enter choice: 2
+
+#2  What does 9-7 = 2
+    Correct :)
+
+******************************************
+* Please press the enter key to continue *
+******************************************
+
+==========================
+  Simple Math Tutor Menu  
+==========================
+   1 = (+) Addition
+   2 = (-) Subraction
+   3 = (x) Multiplication
+   4 = (/) Divide
+--------------------------
+   5 = Status Report
+   6 = Save Current Game
+   7 = Load Previous Game
+   8 = Reset Game
+--------------------------
+   0 = Quit
+--------------------------
+
+Enter choice: 3
+
+#3  What does 8*7 = 44
+    Sorry that was incorrect.
+    You have 2 attempts left.
+
+#3  What does 8*7 = 44
+    Sorry that was incorrect.
+    You have 1 attempts left.
+
+#3  What does 8*7 = 44
+    Sorry, you are out of attempts.
+    The correct answer is 56.
+
+******************************************
+* Please press the enter key to continue *
+******************************************
+
+==========================
+  Simple Math Tutor Menu  
+==========================
+   1 = (+) Addition
+   2 = (-) Subraction
+   3 = (x) Multiplication
+   4 = (/) Divide
+--------------------------
+   5 = Status Report
+   6 = Save Current Game
+   7 = Load Previous Game
+   8 = Reset Game
+--------------------------
+   0 = Quit
+--------------------------
+
+Enter choice: 4
+
+#4  What does 16/4 = 4
+    Correct :)
+
+******************************************
+* Please press the enter key to continue *
+******************************************
+
+==========================
+  Simple Math Tutor Menu  
+==========================
+   1 = (+) Addition
+   2 = (-) Subraction
+   3 = (x) Multiplication
+   4 = (/) Divide
+--------------------------
+   5 = Status Report
+   6 = Save Current Game
+   7 = Load Previous Game
+   8 = Reset Game
+--------------------------
+   0 = Quit
+--------------------------
+
+Enter choice: 5
+
+
+==============================
+   Math Tutor Detail Report   
+==============================
+   Questions        Attempts
+----------------  ------------
+  6 + 1   =   7     Incorrect
+  9 - 7   =   2        1
+  8 * 7   =  56     Incorrect
+ 16 / 4   =   4        1
+
+=======================
+        SUMMARRY       
+-----------------------
+
+Total Questions =   4
+Total Incorrect =   2
+Total Correct   =   2
+Percent Correct =  50%
+
+-----------------------
+
+******************************************
+* Please press the enter key to continue *
+******************************************
+
+==========================
+  Simple Math Tutor Menu  
+==========================
+   1 = (+) Addition
+   2 = (-) Subraction
+   3 = (x) Multiplication
+   4 = (/) Divide
+--------------------------
+   5 = Status Report
+   6 = Save Current Game
+   7 = Load Previous Game
+   8 = Reset Game
+--------------------------
+   0 = Quit
+--------------------------
+
+Enter choice: 6
+
+saving game please wait...
+saved 4 questions to MathTutor.txt
+save complete
+******************************************
+* Please press the enter key to continue *
+******************************************
+
+==========================
+  Simple Math Tutor Menu  
+==========================
+   1 = (+) Addition
+   2 = (-) Subraction
+   3 = (x) Multiplication
+   4 = (/) Divide
+--------------------------
+   5 = Status Report
+   6 = Save Current Game
+   7 = Load Previous Game
+   8 = Reset Game
+--------------------------
+   0 = Quit
+--------------------------
+
+Enter choice: 7
+
+******************************************
+* Please press the enter key to continue *
+******************************************
+
+==========================
+  Simple Math Tutor Menu  
+==========================
+   1 = (+) Addition
+   2 = (-) Subraction
+   3 = (x) Multiplication
+   4 = (/) Divide
+--------------------------
+   5 = Status Report
+   6 = Save Current Game
+   7 = Load Previous Game
+   8 = Reset Game
+--------------------------
+   0 = Quit
+--------------------------
+
+Enter choice: 8
+
+    *Game Reset*
+
+******************************************
+* Please press the enter key to continue *
+******************************************
+
+==========================
+  Simple Math Tutor Menu  
+==========================
+   1 = (+) Addition
+   2 = (-) Subraction
+   3 = (x) Multiplication
+   4 = (/) Divide
+--------------------------
+   5 = Status Report
+   6 = Save Current Game
+   7 = Load Previous Game
+   8 = Reset Game
+--------------------------
+   0 = Quit
+--------------------------
+
+Enter choice: 0
+
+I hope you play this game again soon.
+Goodbye for now.
+ 
+
+Error Checking:
+
+Status Report Fail:
++-------------------------------------------+
+|                 Math Tutor                |
++-------------------------------------------+
+
+Please enter your first name: Aaron M.
+
+Hello Aaron M.!
+You get 3 attempts per question.
+Now let the fun begin!
+
+==========================
+  Simple Math Tutor Menu  
+==========================
+   1 = (+) Addition
+   2 = (-) Subraction
+   3 = (x) Multiplication
+   4 = (/) Divide
+--------------------------
+   5 = Status Report
+   6 = Save Current Game
+   7 = Load Previous Game
+   8 = Reset Game
+--------------------------
+   0 = Quit
+--------------------------
+
+Enter choice: 5
+
+    No questions to report.
+
+******************************************
+* Please press the enter key to continue *
+******************************************
+
+
+SaveGame Fail:
++-------------------------------------------+
+|                 Math Tutor                |
++-------------------------------------------+
+
+Please enter your first name: Aaron M.
+
+Hello Aaron M.!
+You get 3 attempts per question.
+Now let the fun begin!
+
+==========================
+  Simple Math Tutor Menu  
+==========================
+   1 = (+) Addition
+   2 = (-) Subraction
+   3 = (x) Multiplication
+   4 = (/) Divide
+--------------------------
+   5 = Status Report
+   6 = Save Current Game
+   7 = Load Previous Game
+   8 = Reset Game
+--------------------------
+   0 = Quit
+--------------------------
+
+Enter choice: 6
+
+    No question to save.
+
+******************************************
+* Please press the enter key to continue *
+******************************************
+
+
+Load Game Fail:
++-------------------------------------------+
+|                 Math Tutor                |
++-------------------------------------------+
+
+Please enter your first name: Aaron M.
+
+Hello Aaron M.!
+You get 3 attempts per question.
+Now let the fun begin!
+
+==========================
+  Simple Math Tutor Menu  
+==========================
+   1 = (+) Addition
+   2 = (-) Subraction
+   3 = (x) Multiplication
+   4 = (/) Divide
+--------------------------
+   5 = Status Report
+   6 = Save Current Game
+   7 = Load Previous Game
+   8 = Reset Game
+--------------------------
+   0 = Quit
+--------------------------
+
+Enter choice: 7
+
+    No previus game to load
+
+******************************************
+* Please press the enter key to continue *
+******************************************
+
+Game Reset:
++-------------------------------------------+
+|                 Math Tutor                |
++-------------------------------------------+
+
+Please enter your first name: Aaron M.
+
+Hello Aaron M.!
+You get 3 attempts per question.
+Now let the fun begin!
+
+==========================
+  Simple Math Tutor Menu  
+==========================
+   1 = (+) Addition
+   2 = (-) Subraction
+   3 = (x) Multiplication
+   4 = (/) Divide
+--------------------------
+   5 = Status Report
+   6 = Save Current Game
+   7 = Load Previous Game
+   8 = Reset Game
+--------------------------
+   0 = Quit
+--------------------------
+
+Enter choice: 8
+
+    *Game Reset*
+
+******************************************
+* Please press the enter key to continue *
+******************************************
+

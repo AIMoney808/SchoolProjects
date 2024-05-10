@@ -1,0 +1,123 @@
++-------------------------------------------+
+|                 Math Tutor                |
++-------------------------------------------+
+
+Please enter your first name: Debbie Jo
+
+Hello Debbie Jo!
+You get 3 attempts per question.
+Now let the fun begin!
+
++-------------------------------------------+
+
+#1  What does 4+1 = 5
+    WooHoo!! Correct :)
+
+Do you want to continue (y=yes | n=no): abc
+Sorry invalid input. Please try again.
+Do you want to continue (y=yes | n=no): YES
+
++-------------------------------------------+
+
+#2  What does 30/3 = 30
+    Bummer, that was incorrect.
+    You have 2 attempts left.
+
+#2  What does 30/3 = 3
+    Bummer, that was incorrect.
+    You have 1 attempts left.
+
+#2  What does 30/3 = 1
+    Sorry, you are out of attempts.
+    The correct answer is 10.
+
+Do you want to continue (y=yes | n=no): y
+
++-------------------------------------------+
+
+#3  What does 56/7 = 6
+    Bummer, that was incorrect.
+    You have 2 attempts left.
+
+#3  What does 56/7 = 8
+    WooHoo!! Correct :)
+
+Do you want to continue (y=yes | n=no): n
+
+==========================
+ Math Tutor Detail Report 
+==========================
+   Question      Attempts 
+--------------  ----------
+  4 + 1   =   5      1
+ 30 / 3   =  10  Incorrect
+ 56 / 7   =   8      2
+
++-------------------------------------------+
+
+Total Questions =    3
+Total Incorrect =    1
+Total Correct   =    2
+Percent Correct =   67%
+
++-------------------------------------------+
+
+I hope you play this game again soon.
+Goodbye for now.
+
+PSEUDOCODE
+==========
+declare variables
+2B: declare the 2D vector
+display the welcome header
+get the user's name
+welcome the user to the game
+seed the random function
+
+outer while loop to keep looping if the user wants to continue (y or yes)
+    add one to the total number of questions
+    generate random numbers
+    flip the numbers
+    switch to setup the math type
+	
+	2B: declare a new vector row to store the current question information
+	    and initalize the left number, question type, and right number	
+
+    for loop to give the user 3 attempts to answer the question correctly
+        display question
+        
+        get user's answer using while loop to validate numeric input
+        
+        if userAnswer is correct 
+			2B: push back the number of attempts to the end of the row vector
+            add to the correct counter, display correct, and break out 
+        else 
+			2B: push back 0 to the end of the row vector
+            tell the user they were incorrect, and how many attempts left
+            if the user is out of attempts then display the correct answer
+    end of for loop
+	
+	2B: push back row to the end of the 2D vector
+
+    inner while loop until the user enters a valid input (y, yes, n, no)
+        for loop to lower case the user's input
+        if valid input 
+            break out
+         else 
+            tell them invalid
+    end of inner while loop
+    
+end of outer while loop to keep game looping
+
+2B: display the detail report header
+2B: for loop through the 2D vector
+	pull the current row data out of the 2D vector
+	example: leftNum = mathQuestions.at(i).at(0);
+	switch to assign correctAnswer and questionOp
+		NOTE: divide will have the same logic as the other types
+		NOTE: default to display a return error -2
+	display the current question information
+	if-else to display attempts or invalid
+	
+display the user's stats
+display end of program

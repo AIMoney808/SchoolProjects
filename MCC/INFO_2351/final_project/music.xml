@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tracks xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="music.xsd">
+    <name>Albums in the Mix</name>
+    <album>
+        <title>Chaotic Dreams</title>
+        <author>salad</author>
+        <releaseDate>2021-12-03</releaseDate>
+        <genre>Ambient/Drum+Bass</genre>
+        <trackCount>13</trackCount>
+    </album>
+    <album>
+        <title>Random Access Memories</title>
+        <author>Daft Punk</author>
+        <releaseDate>2013-05-17</releaseDate>
+        <genre>Disco/funk</genre>
+        <trackCount>13</trackCount>
+    </album>
+    <album>
+        <title>Nu Radio!</title>
+        <author>Deko</author>
+        <releaseDate>2021-12-23</releaseDate>
+        <genre>Hip-Hop/Rap</genre>
+        <trackCount>33</trackCount>
+    </album>
+    <album>
+        <title>The Maze To Nowhere</title>
+        <author>Lorn</author>
+        <releaseDate>2014-08-27</releaseDate>
+        <genre>Dance/Electronic</genre>
+        <trackCount>12</trackCount>
+    </album>
+    <album>
+        <title>vignette</title>
+        <author>Frums</author>
+        <releaseDate>2020-07-03</releaseDate>
+        <genre>Electronic</genre>
+        <trackCount>20</trackCount>
+    </album>
+</tracks>

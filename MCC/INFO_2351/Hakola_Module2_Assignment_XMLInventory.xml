@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	INFO 2351 WW
+	Module 2 Assignment "First XML Inventory"
+	03/26/2022
+	Kimberly Hakola
+-->
+<house id="Hakola">
+	<inventory>
+		<room category="Living Room">
+			<roomName>Living Room</roomName>
+			<item>
+				<category>Bookshelf</category>
+				<itemType>Oak</itemType>
+				<itemColor>Light Brown</itemColor>
+				<itemSize>Tall</itemSize>
+				<other>Paperback</other>
+				<quantity>2</quantity>
+			</item>
+			<item>
+				<category>Bookshelf</category>
+				<itemType>Oak</itemType>
+				<itemColor>Light Brown</itemColor>
+				<itemSize>Tall</itemSize>
+				<other>Textbook</other>
+				<quantity>1</quantity>
+			</item>
+			<item>
+				<category>Bookshelf</category>
+				<itemType>Oak</itemType>
+				<itemColor>Light Brown</itemColor>
+				<itemSize>Short</itemSize>
+				<other>Hardback</other>
+				<quantity>2</quantity>
+			</item>
+			<item>
+				<category>Furniture</category>
+				<itemType>Recliner</itemType>
+				<itemColor>Medium Brown</itemColor>
+				<itemSize>Large</itemSize>
+				<other>Electric With Lift</other>
+				<quantity>1</quantity>
+			</item>
+			<item>
+				<category>Furniture</category>
+				<itemType>Recliner</itemType>
+				<itemColor>Light Green</itemColor>
+				<itemSize>Large</itemSize>
+				<other>Manual</other>
+				<quantity>1</quantity>
+			</item>
+			<item>
+				<category>Furniture</category>
+				<itemType>Love Seat</itemType>
+				<itemColor>Blue Green</itemColor>
+				<itemSize>Medium</itemSize>
+				<other>With Ottoman</other>
+				<quantity>1</quantity>
+			</item>
+		</room>
+		<room category="Dining Room">
+			<roomName>Dining Room</roomName>
+			<item>
+				<category>Furniture</category>
+				<itemType>Table</itemType>
+				<itemColor>Cherrywood</itemColor>
+				<itemSize>Medium</itemSize>
+				<other>Kitchen Table</other>
+				<quantity>1</quantity>
+			</item>
+			<item>
+				<category>Bookshelf</category>
+				<itemType>Pressboard</itemType>
+				<itemColor>White</itemColor>
+				<itemSize>Tall</itemSize>
+				<other>CookBooks</other>
+				<quantity>1</quantity>
+			</item>
+			<item>
+				<category>Furniture</category>
+				<itemType>Chair</itemType>
+				<itemColor>Medium Brown With Tan Seat</itemColor>
+				<itemSize>Medium</itemSize>
+				<other></other>
+				<quantity>4</quantity>
+			</item>
+		</room>
+		<room category="Other">
+			<roomName>Sitting Room</roomName>
+			<item>
+				<category>Furniture</category>
+				<itemType>Shelf</itemType>
+				<itemColor>Black</itemColor>
+				<itemSize>Tall and Long</itemSize>
+				<other>Craft Items</other>
+				<quantity>1</quantity>
+			</item>
+			<item>
+				<category>Furniture</category>
+				<itemType>Chair</itemType>
+				<itemColor>Red Flower Print</itemColor>
+				<itemSize>Small</itemSize>
+				<other>Antique</other>
+				<quantity>2</quantity>
+			</item>
+			<item>
+				<category>Furniture</category>
+				<itemType>Chair</itemType>
+				<itemColor>Black</itemColor>
+				<itemSize>Large</itemSize>
+				<other>Massage</other>
+				<quantity>1</quantity>
+			</item>
+		</room>
+	</inventory>
+</house>

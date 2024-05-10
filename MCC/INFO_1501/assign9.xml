@@ -1,0 +1,8 @@
+<Company>
+  <employee>
+    <ID>1</ID>
+    <first>John</first>
+    <last>Smith</last>
+    <pay>15.00</pay>
+  </employee>
+</Company>

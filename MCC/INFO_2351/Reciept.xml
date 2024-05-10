@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="forReceipt.xsl"?>
+<transaction>
+    <regNum>Register 001</regNum>
+    <date>5-Oct-03</date>
+    <store>Store: 001</store>
+    <CustomerNumber>00475893</CustomerNumber>
+    <Order>
+        <item>
+            <description>Beef Roast</description>
+            <UPC>37600-47371</UPC>
+            <price>4.84</price>
+            <department>Meat</department>
+            <quantity>1</quantity>
+            <extPrice>4.84</extPrice>
+        </item>
+        <item>
+            <description>Plain Bagel</description>
+            <UPC>76800-00591</UPC>
+            <price>.98</price>
+            <department>Dairy</department>
+            <quantity>1</quantity>
+            <extPrice>.98</extPrice>
+        </item>
+        <item>
+            <description>Dill Pickle Chips</description>
+            <UPC>28400-03100</UPC>
+            <price>2.99</price>
+            <department>Grocery</department>
+            <quantity>1</quantity>
+            <extPrice>2.99</extPrice>
+        </item>
+        <item>
+            <description>Turkey Dinner</description>
+            <UPC>71984-04506</UPC>
+            <price>2.99</price>
+            <department>Frozen</department>
+            <quantity>1</quantity>
+            <extPrice>2.99</extPrice>
+        </item>
+        <item>
+            <description>Pot Roast Dinner</description>
+            <UPC>71984-04509</UPC>
+            <price>2.99</price>
+            <department>Frozen</department>
+            <quantity>1</quantity>
+            <extPrice>2.99</extPrice>
+        </item>
+    </Order>
+    <itemCount>5</itemCount>
+    <tax>0.00</tax>
+    <totalPrice>14.79</totalPrice>
+    <totalPaid method="14.79" />
+    <paymentDetails method="xxxx xxxx xxxx 1234" />
+</transaction>

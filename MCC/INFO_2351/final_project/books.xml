@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE shelf SYSTEM "books.dtd">
+<shelf>
+    <name>Books on the Shelf</name>
+    <book>
+        <title>Mortal Engines</title>
+        <author>Philip Reeve</author>
+        <pubdate>2001</pubdate>
+        <genre>SciFi</genre>
+        <value>$9.99</value>
+    </book>
+    <book>
+        <title>Shadow of the Torturer</title>
+        <author>Gene Wolf</author>
+        <pubdate>1980</pubdate>
+        <genre>SciFi</genre>
+        <value>$19.99</value>
+    </book>
+    <book>
+        <title>Treasure Island</title>
+        <author>Robert Luis Stevenson</author>
+        <pubdate>1947</pubdate>
+        <genre>AdvFi</genre>
+        <value>$12.99</value>
+    </book>
+    <book>
+        <title>The Dark Tower: The Gunslinger</title>
+        <author>Stephen King</author>
+        <pubdate>1982</pubdate>
+        <genre>Dark Fantasy</genre>
+        <value>$15.97</value>
+    </book>
+    <book>
+        <title>Percy Jackson and the Olympians: The Lightning Thief</title>
+        <author>Rick Riordan</author>
+        <pubdate>2005</pubdate>
+        <genre>Greek Myth/Fiction</genre>
+        <value>$5.97</value>
+    </book>
+</shelf>

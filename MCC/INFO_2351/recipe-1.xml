@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE recipe SYSTEM "recipe-1.dtd">
+<recipe>
+    <name>Crab Cakes</name>
+    <time>
+        <prep>10 minutes</prep>
+        <chill>1 1/2 hour</chill>
+        <cook>5 minutes</cook>
+    </time>
+    <yield>4 Servings</yield>
+    <ingredient-list>
+        <ingredient>
+            <amount>1 pound</amount>
+            <description>crabmeat, cooked, cartilage removed and flaked</description>
+        </ingredient>
+        <ingredient>
+            <amount>1 1/2 cups</amount>
+            <description>soft white bread crumbs, no crusts</description>
+        </ingredient>
+        <ingredient>
+            <amount>2 tablespoons</amount>
+            <description>margarine or butter, melted</description>
+        </ingredient>
+        <ingredient>
+            <amount>1 teaspoon</amount>
+            <description>ground mustard (dry)</description>
+        </ingredient>
+        <ingredient>
+            <amount>1/2 teaspoon</amount>
+            <description>salt</description>
+        </ingredient>
+        <ingredient>
+            <amount>1/8 teaspoon</amount>
+            <description>pepper</description>
+        </ingredient>
+        <ingredient>
+            <amount>2</amount>
+            <description>large egg yolks, beaten</description>
+        </ingredient>
+        <ingredient>
+            <description>Vegetable Oil</description>
+        </ingredient>
+    </ingredient-list>
+    <steps>
+        <step order="1"> Mix all ingredients except oil. Shape mixture into 4 patties, each about 3
+            1/2 inches in diameter. Cover and refrigerate about 1 1/2 hours or until firm. </step>
+        <step order="2"> Heat oil (1 inch) in deep fryer or 10-inch skillet to 375. Fry patties in
+            oil 4 to 5 minutes, turning once, until golden brown on both sides. Drain on paper
+            towels. </step>
+    </steps>
+</recipe>

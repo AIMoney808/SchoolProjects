@@ -1,0 +1,49 @@
+main.cpp
+	#include <cstdlib>
+	#include <ctime>
+	#include <iostream>
+	#include <string>
+	#include <vector>
+
+	#include "mathTutor.h" 
+
+	using namespace std;
+	
+	// PUT YOUR FILE LEVEL DOCUMENTATION GOES HERE
+	
+	// PUT YOUR MAIN FUNCTION HERE
+	
+mathTutor.h
+	#include <vector>
+	
+	using namespace std;
+	
+	// PUT YOUR FILE LEVEL DOCUMENTATION GOES HERE
+
+	#ifndef MATHTUTOR_H
+	#define MATHTUTOR_H
+
+	// PUT ALL YOUR FUNCTION PROTOTYPES HERE
+	
+	#endif	
+
+
+mathTutor.cpp	
+	#include <cstdlib>
+	#include <iomanip>
+	#include <iostream>
+	#include <limits>
+	#include <string>
+	#include <vector>
+
+	using namespace std; // so we don't have to type std::cin etc
+	
+	// PUT YOUR FILE LEVEL DOCUMENTATION GOES HERE
+
+	const int MAX_ATTEMPTS = 3;
+	const vector<char> MATH_OPERATORS = {'+', '-', '*', '/'};
+	enum MathTypes { MT_ADD, MT_SUBTRACT, MT_MULTIPLY, MT_DIVIDE }
+	
+	// PUT ALL YOUR FUNCTIONS HERE
+
+

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="mod5_home_inventory.xsl"?>
+<inventory>
+	<name>Inventory List of Items in the House</name>
+	<room>
+		<item>
+			<roomName>Living Room</roomName>
+			<category>Furniture</category>
+			<itemType>Recliner</itemType>
+			<itemColor>Brown Leather</itemColor>
+			<itemSize>Large</itemSize>
+			<quantity>1</quantity>
+		</item>
+		<item>
+			<roomName>Living Room</roomName>
+			<category>Furniture</category>
+			<itemType>Recliner</itemType>
+			<itemColor>Gray Green</itemColor>
+			<itemSize>Large</itemSize>
+			<quantity>1</quantity>
+		</item>
+		<item>
+			<roomName>Living Room</roomName>
+			<category>Furniture</category>
+			<itemType>Sofa</itemType>
+			<itemColor>Brown Leather</itemColor>
+			<itemSize>Large</itemSize>
+			<quantity>1</quantity>
+		</item>
+	</room>
+	<room>
+		<item>
+			<roomName>Dining Room</roomName>
+			<category>Furniture</category>
+			<itemType>Table</itemType>
+			<itemColor>Cherrywood</itemColor>
+			<itemSize>Large</itemSize>
+			<quantity>1</quantity>
+		</item>
+		<item>
+			<roomName>Dining Room</roomName>
+			<category>Furniture</category>
+			<itemType>CupBoard</itemType>
+			<itemColor>Wood</itemColor>
+			<itemSize>Tall</itemSize>
+			<quantity>1</quantity>
+		</item>
+		<item>
+			<roomName>Dining Room</roomName>
+			<category>Furniture</category>
+			<itemType>Chair</itemType>
+			<itemColor>Med Brown W/ Tan Seat</itemColor>
+			<itemSize>Medium</itemSize>
+			<quantity>6</quantity>
+		</item>
+	</room>
+	<room>
+		<item>
+			<roomName>Bedroom</roomName>
+			<category>Furniture</category>
+			<itemType>Shelf</itemType>
+			<itemColor>Press Board</itemColor>
+			<itemSize>Tall</itemSize>
+			<quantity>1</quantity>
+		</item>
+		<item>
+			<roomName>Bedroom</roomName>
+			<category>Furniture</category>
+			<itemType>Bed</itemType>
+			<itemColor>Black</itemColor>
+			<itemSize>Large</itemSize>
+			<quantity>1</quantity>
+		</item>
+		<item>
+			<roomName>Bedroom</roomName>
+			<category>Furniture</category>
+			<itemType>Chair</itemType>
+			<itemColor>Black</itemColor>
+			<itemSize>Medium</itemSize>
+			<quantity>1</quantity>
+		</item>
+		<item>
+			<roomName>Bedroom</roomName>
+			<category>Furniture</category>
+			<itemType>Desk</itemType>
+			<itemColor>Black</itemColor>
+			<itemSize>Medium</itemSize>
+			<quantity>1</quantity>
+		</item>
+	</room>
+</inventory>

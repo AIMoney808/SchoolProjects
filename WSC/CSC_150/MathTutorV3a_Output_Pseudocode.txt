@@ -1,0 +1,349 @@
++-------------------------------------------+
+|                 Math Tutor                |
++-------------------------------------------+
+
+Please enter your first name: Deb Jo
+
+Hello Deb Jo!
+You get 3 attempts per question.
+Now let the fun begin!
+
+==========================
+  Simple Math Tutor Menu 
+==========================
+   1 = (+) Addition
+   2 = (-) Subraction
+   3 = (x) Multiplication
+   4 = (/) Divide
+--------------------------
+   5 = Status Report
+   6 = Save Current Game
+   7 = Load Previous Game
+--------------------------
+   0 = Quit
+--------------------------
+Enter choice: 1
+
+Question #: 1 What does 7+2 = 9
+    WooHoo!! Correct :)
+
+Please the enter key to continue...
+
+==========================
+  Simple Math Tutor Menu 
+==========================
+   1 = (+) Addition
+   2 = (-) Subraction
+   3 = (x) Multiplication
+   4 = (/) Divide
+--------------------------
+   5 = Status Report
+   6 = Save Current Game
+   7 = Load Previous Game
+--------------------------
+   0 = Quit
+--------------------------
+Enter choice: 2
+
+Question #: 2 What does 7-6 = 2
+    Bummer, that was incorrect.
+    You have 2 attempts left.
+
+Question #: 2 What does 7-6 = 3
+    Bummer, that was incorrect.
+    You have 1 attempts left.
+
+Question #: 2 What does 7-6 = 4
+    Sorry, you are out of attempts.
+    The correct answer is 1.
+
+Please the enter key to continue...
+
+==========================
+  Simple Math Tutor Menu 
+==========================
+   1 = (+) Addition
+   2 = (-) Subraction
+   3 = (x) Multiplication
+   4 = (/) Divide
+--------------------------
+   5 = Status Report
+   6 = Save Current Game
+   7 = Load Previous Game
+--------------------------
+   0 = Quit
+--------------------------
+Enter choice: 6
+
+Need to code SaveCurrentGame fuction...
+
+Please the enter key to continue...
+
+==========================
+  Simple Math Tutor Menu 
+==========================
+   1 = (+) Addition
+   2 = (-) Subraction
+   3 = (x) Multiplication
+   4 = (/) Divide
+--------------------------
+   5 = Status Report
+   6 = Save Current Game
+   7 = Load Previous Game
+--------------------------
+   0 = Quit
+--------------------------   
+Enter choice: 0
+
+I hope you play this game again soon.
+Goodbye for now.
+
+===========
+PSEUDOCODE:
+===========
+
+includes
+namespace
+
+program header documentation
+
+//GLOBAL VARIABLES
+const int MAX_ATTEMPTS = 3;
+const vector<char> MATH_OPERATORS = {'+', '-', '*', '/'};
+enum MathTypes { MT_ADD, MT_SUBTRACT, MT_MULTIPLY, MT_DIVIDE };
+
+
+/************************************************************************************
+Display the game header banner
+*************************************************************************************/
+void DisplayGameHeader()
+
+/************************************************************************************
+Get the user's name, welcome the user, and display the rules of the game
+*************************************************************************************/
+void WelcomeUser()
+
+/************************************************************************************
+Keep looping until the user enters a valid numeric value and then return the value
+*************************************************************************************/
+int GetNumericValue()
+
+/************************************************************************************
+Display the menu and keep looping until the user enters a valid choice
+GetNumericValue is used to validate numeric input
+This function returns the user's menu choice
+*************************************************************************************/
+int GetUserMenuChoice() 
+
+/************************************************************************************
+Setup the question, by generating the left and right numbers
+If the question type is divison, it also makes sure that the left number is 
+divisible by the right number.
+
+This function returns the newly created row vector which stores the left number,
+question type, and right number. The user's attempts will be added to the vector
+in a different AskMathQuestion function
+*************************************************************************************/
+vector<int> CreateQuestion(int questType) {
+  int temp = 0;
+  int leftNum = 0;
+  int rightNum = 0;
+
+  generate random numbers
+  make sure the left number is larger
+
+  if (questType == MT_DIVIDE) // avoid answers like 2.3333....
+    leftNum *= rightNum;
+
+  return {leftNum, questType, rightNum};
+}
+
+/************************************************************************************
+Based on the data stored in the row vector, this function uses a switch statement
+to calculate what the correct answer should be and returns the value
+*************************************************************************************/
+int GetCorrectAnswer(const vector<int>& row) {
+  int leftNum = row.at(0);
+  int questType = row.at(1);
+  int rightNum = row.at(2);
+
+  int correctAnswer = 0;
+
+  switch questType
+  case 0:
+	generate correctAnswer
+	break;
+  case...
+  default:
+    cout << "Unable to get the correct Answer: -2 Error Code" << endl;
+	cout << "Invalid question type: " << questType << endl;
+	exit(-2); // end the program immediately (do NOT return -2)
+  }  
+
+  return correctAnswer;
+}
+
+/************************************************************************************
+This function uses the MATH_OPERATORS vector to determine what math operator 
+to display (+, -, *, /) based on the questType. It calls CreateQuestion
+to build the row vector that contains the leftNum and rightNum. It also calls
+GetCorrectAnswer based on the row vector. Then it uses a for loop to give the user
+three attempts. GetNumericvalue is use to get valid numeric values. Finally, it adds
+the row vector to the 2D vector.
+*************************************************************************************/
+void AskMathQuestion(int questType, vector<vector<int>>& mathQuestions) {
+
+  char questOp = MATH_OPERATORS.at(questType);
+
+  vector<int> row = CreateQuestion(questType);
+
+  int leftNum = row.at(0);
+  int rightNum = row.at(2);
+  int correctAnswer = GetCorrectAnswer(row);
+  int userAnswer = 0;
+  int questNum = mathQuestions.size() + 1;
+  
+  for loop to give the user's three attempts
+  
+  mathQuestions.push_back(row);
+
+} 
+
+/************************************************************************************
+This function uses the 2D vector, to display the detail report. If the 2D vector
+contains no data, it displays a message and returns back to main. Total quesions
+is calculated based on the size of the 2D vector. Total correct is calculated based
+on the user's attempts. After display the detail report, it also displays a summary
+report.
+*************************************************************************************/
+void DisplayStatusReport(const vector<vector<int>>& mathQuestions){
+	int leftNum = 0;
+	int mathType = 0;
+	int rightNum = 0;
+	int correctAnswer = 0;
+	int attempts = 0;	
+	int totalCorrect = 0;
+	int totalQuestions = 0;
+	char questOp = '?';
+
+	totalQuestions = mathQuestions.size();
+	
+	if there are no questions, display no data and return
+	
+	display detail report
+		if correct then totalCorrect++
+
+	display summary report
+
+	return;
+}
+
+/************************************************************************************
+Writes the 2D vector to a file named MathTutor.txt
+The data contains the following information: leftNum, questType, rightNum, attempts
+*************************************************************************************/
+void SaveCurrentGame(const vector<vector<int>>& mathQuestions){
+	cout << endl;
+	cout << "Need to code SaveCurrentGame fuction..." << endl;
+	cout << endl;
+	
+	return;
+}
+
+/************************************************************************************
+Read a file names MathTutor.txt
+Makes sure the 2D vector is empty before it loads the previous game data: 
+leftNum, questType, rightNum, attempts
+*************************************************************************************/
+void LoadPreviousGame(vector<vector<int>>& mathQuestions){
+	
+	cout << endl;
+	cout << "Need to code LoadPreviousGame fuction..." << endl;
+	cout << endl;
+	
+	return;
+}
+
+/************************************************************************************
+Calls DisplayGameHeader and WelcomeUser
+Then loops while GetUserMenuChoice doesn't equal 0
+After processing the user's request, the user presses the enter key to return to the
+main menu. Menu options 1-4 all call the AskMathQuestion function
+*************************************************************************************/
+int main() {
+
+  int userChoice = 0;
+  string inputGarbage = "";
+  vector<vector<int>> mathQuestions;
+
+  srand(time(0)); // seed the random method with the currect time
+
+  while ((userChoice = GetUserMenuChoice())) {
+
+    switch (userChoice) {
+    case 1: case 2: case 3: case 4:
+      AskMathQuestion(userChoice - 1, mathQuestions);
+      break;
+	case...
+	default...
+	    cout << "Unable to get valid menu choice: -1 Error Code" << endl;
+		cout << "Invalid menu choice: " << userChoice << endl;
+		return -1;
+	}// end of switch
+	
+	please press any key
+		
+  } // end of while loop
+
+  display closing message
+
+  // return 0 for a success end of program
+  return 0;
+}
+
+NOTE: Only after you have all your functions working,
+move all of your functions (not main) to a separate file called mathTutor.cpp
+and connect your main.cpp to your mathTutor.cpp using a mathTutor.h header file
+Some of your includes and global variables will have to move too
+Example: zyBooks 6.18
+
+REMEMBER to document ALL your functions :)
+
+HINT: this is the order you shoudl work on your functions:
+Start with an empty program!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+1) code DisplayGameHeader function
+   and have the main function call it
+   test
+2) code WelcomeUser function
+   and have the main function call it
+   test
+3) code the GetUserMenuChoice using the function I provided you in the MainMenu.cpp program
+   and have the main function call it using the while loop logic that I provided you in the MainMenu.cpp program
+   for testing purposes the switch should simply display what menu option they selected (you will add the actual logic later)
+   don't forget the logic to press the enter key to continue
+   test
+4) code the GetNumericValue 
+   and change GetUserMenuChoice to use it to get the user's numeric input
+   test
+5) code the AskMathQuestion function next
+   you will have to code this in stages because this function calls other functions that you haven't written yet
+5a) code CreateQuestion
+    verify that this function returns the row vector by temporarily displaying it's value
+	test
+5b) code GetCorrectAnswer
+    verify that this function is returning the correct answer by temporarily displaying it's value
+	test
+5c) add your for loop logic
+    don't forget that the for loop should call GetNumericValue
+	after the for loop add the row to the 2D vector
+6)  code DisplayStatusReport
+    test
+7)  code SaveCurrentGame as a function stub
+    test
+8)  code LoadPreviousGame as a function stub
+    test
+9)  move all functions, except main, to mathTutor.cpp file
+    create a header file mathTutor.h
+	change main.cpp file to include the mathTutor.h file which in turns will automatically include mathTutor.cpp
+	you will have to move/copy some of your includes into the correct files 
+	test

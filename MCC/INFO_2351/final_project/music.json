@@ -1,0 +1,44 @@
+{
+    "tracks": {
+        "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "xsi:noNamespaceSchemaLocation": "music.xsd",
+        "name": "Albums in the Mix",
+        "album": [
+            {
+                "title": "Chaotic Dreams",
+                "author": "salad",
+                "releaseDate": "2021-12-03",
+                "genre": "Ambient/Drum+Bass",
+                "trackCount": 13
+            },
+            {
+                "title": "Random Access Memories",
+                "author": "Daft Punk",
+                "releaseDate": "2013-05-17",
+                "genre": "Disco/funk",
+                "trackCount": 13
+            },
+            {
+                "title": "Nu Radio!",
+                "author": "Deko",
+                "releaseDate": "2021-12-23",
+                "genre": "Hip-Hop/Rap",
+                "trackCount": 33
+            },
+            {
+                "title": "The Maze To Nowhere",
+                "author": "Lorn",
+                "releaseDate": "2014-08-27",
+                "genre": "Dance/Electronic",
+                "trackCount": 12
+            },
+            {
+                "title": "vignette",
+                "author": "Frums",
+                "releaseDate": "2020-07-03",
+                "genre": "Electronic",
+                "trackCount": 20
+            }
+        ]
+    }
+}

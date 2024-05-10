@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- 
+	  ADV WEB DEVELOPMENT
+	  Final Project: Weather App
+	  
+	  Author: Aaron Mahoney
+	  Date:   4/16/2024
+	  
+	  The main sorce for this project was: chatgpt https://chat.openai.com/
+	  Weather data pulled from Open Weather API https://openweathermap.org/api
+	  
+	  Filename: weather.html
+  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Local Weather Application</h1>
+    <input type="text" id="cityInput" placeholder="Enter city name">
+    <button onclick="getWeather()">Get Weather</button>
+    <div id="weatherInfo"></div>
+  </div>
+  <script src="weather.js"></script>
+</body>
+</html>

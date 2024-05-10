@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT shelf (name,book+)*>
+
+<!ELEMENT name (#PCDATA)>
+
+<!ELEMENT book (title,author,pubdate,genre,value)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT pubdate (#PCDATA)>
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT value (#PCDATA)>

@@ -1,0 +1,47 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT Employees (Staff)*>
+
+<!ELEMENT Staff (Emp_ID,Name_Prefix,First_Name,Middle_Initial,Last_Name,Gender,
+    E_Mail,Father_s_Name,Mother_s_Name,Mother_s_Maiden_Name,Date_of_Birth,
+    Time_of_Birth,Age_in_Yrs.,Weight_in_Kgs.,Date_of_Joining,Quarter_of_Joining,Half_of_Joining,Year_of_Joining,
+    Month_of_Joining,Month_Name_of_Joining,Short_Month,Day_of_Joining,DOW_of_Joining,Short_DOW,Age_in_Company__Years_,
+    Salary,Last___Hike,SSN,Phone_No._,Place_Name,County,City,State,Zip,Region,User_Name,Password)>
+
+<!ELEMENT Emp_ID (#PCDATA)>
+<!ELEMENT Name_Prefix (#PCDATA)>
+<!ELEMENT First_Name (#PCDATA)>
+<!ELEMENT Middle_Initial (#PCDATA)>
+<!ELEMENT Last_Name (#PCDATA)>
+<!ELEMENT Gender (#PCDATA)>
+<!ELEMENT E_Mail (#PCDATA)>
+<!ELEMENT Father_s_Name (#PCDATA)>
+<!ELEMENT Mother_s_Name (#PCDATA)>
+<!ELEMENT Mother_s_Maiden_Name (#PCDATA)>
+<!ELEMENT Date_of_Birth (#PCDATA)>
+<!ELEMENT Time_of_Birth (#PCDATA)>
+<!ELEMENT Age_in_Yrs. (#PCDATA)>
+<!ELEMENT Weight_in_Kgs. (#PCDATA)>
+<!ELEMENT Date_of_Joining (#PCDATA)>
+<!ELEMENT Quarter_of_Joining (#PCDATA)>
+<!ELEMENT Half_of_Joining (#PCDATA)>
+<!ELEMENT Year_of_Joining (#PCDATA)>
+<!ELEMENT Month_of_Joining (#PCDATA)>
+<!ELEMENT Month_Name_of_Joining (#PCDATA)>
+<!ELEMENT Short_Month (#PCDATA)>
+<!ELEMENT Day_of_Joining (#PCDATA)>
+<!ELEMENT DOW_of_Joining (#PCDATA)>
+<!ELEMENT Short_DOW (#PCDATA)>
+<!ELEMENT Age_in_Company__Years_ (#PCDATA)>
+<!ELEMENT Salary (#PCDATA)>
+<!ELEMENT Last___Hike (#PCDATA)>
+<!ELEMENT SSN (#PCDATA)>
+<!ELEMENT Phone_No._ (#PCDATA)>
+<!ELEMENT Place_Name (#PCDATA)>
+<!ELEMENT County (#PCDATA)>
+<!ELEMENT City (#PCDATA)>
+<!ELEMENT State (#PCDATA)>
+<!ELEMENT Zip (#PCDATA)>
+<!ELEMENT Region (#PCDATA)>
+<!ELEMENT User_Name (#PCDATA)>
+<!ELEMENT Password (#PCDATA)>

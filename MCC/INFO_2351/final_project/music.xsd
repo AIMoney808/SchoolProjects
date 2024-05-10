@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="tracks">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" maxOccurs="unbounded"/>
+                <xs:element ref="album" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="album">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="title"/>
+                <xs:element ref="author"/>
+                <xs:element ref="releaseDate"/>
+                <xs:element ref="genre"/>
+                <xs:element ref="trackCount"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="title">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="3"/>
+                <xs:maxLength value="25"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="author" type="xs:string"/>
+    <xs:element name="releaseDate" type="xs:date"/>
+    <xs:element name="genre" type="xs:string"/>
+    <xs:element name="trackCount">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="\d{1,2}"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+</xs:schema>

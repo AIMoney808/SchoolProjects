@@ -1,0 +1,54 @@
+Good, Bad, Ugly.
+
+I didn't have much trouble with this project.
+The hardest part for me was the switch statement.
+
+
+Working correct
+
++--------------------------------------+
+|             Math Tutor               |
++--------------------------------------+
+
+Please enter your first name: Aaron M
+Hello Aaron M!
+
+What is 9-5? 4
+Correct :)
+
+I hope you play this game again soon.
+Goodbye for now.
+ 
+
+Working incorrect
+
++--------------------------------------+
+|             Math Tutor               |
++--------------------------------------+
+
+Please enter your first name: Aaron M
+Hello Aaron M!
+
+What is 7*6? 40
+Incorrect :( The correct answer is 42.
+
+I hope you play this game again soon.
+Goodbye for now.
+ 
+
+
+Default Error Checking
+
++--------------------------------------+
+|             Math Tutor               |
++--------------------------------------+
+
+Please enter your first name: Aaron M
+Hello Aaron M!
+
+Invalid question type: 6
+Program ended with an error -1
+Please report this error to Debbie Johnson.
+exit status 255
+ 
+

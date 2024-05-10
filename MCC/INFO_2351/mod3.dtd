@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT house (inventory)>
+<!ELEMENT inventory (room)*>
+<!ELEMENT room (roomName*,item)*>
+<!ELEMENT roomName (#PCDATA)>
+
+<!ELEMENT item (category,itemType,itemColor,itemSize,quantity)>
+<!ELEMENT category (#PCDATA)>
+<!ELEMENT itemType (#PCDATA)>
+<!ELEMENT itemColor (#PCDATA)>
+<!ELEMENT itemSize (#PCDATA)>
+<!ELEMENT quantity (#PCDATA)>

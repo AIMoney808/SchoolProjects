@@ -1,0 +1,214 @@
+.data
+num1:   .word 0
+num2:   .word 0
+str1:   .space 50
+prompt1:        .asciiz "Enter a string: "
+prompt2:        .asciiz "Enter a number: "
+prompt3:        .asciiz "Enter another number: "
+msg:            .asciiz "You entered the string: "
+msg2:           .asciiz "You entered the numbers "
+msg3:           .asciiz " and "
+newline:        .asciiz "\n"
+
+.globl main
+.text
+
+main:
+        la      $a0, prompt1
+        li      $v0, 4
+        syscall
+
+        la      $a0, str1
+        li      $a1, 51
+        li      $v0, 8
+        syscall
+
+        la      $a0, msg
+        li      $v0, 4
+        syscall
+
+        la      $a0, str1
+        li      $v0, 4
+        syscall
+
+        la      $a0, prompt2
+        li      $v0, 4
+        syscall
+
+        li      $v0, 5
+        syscall
+        sw      $v0, num1
+
+        la      $a0, prompt3
+        li      $v0, 4
+        syscall
+
+        li      $v0, 5
+        syscall
+        sw      $v0, num2
+        la      $a0, msg2
+        li      $v0, 4
+        syscall
+
+        lw      $a0, num1
+        li      $v0, 1
+        syscall
+
+        la      $a0, msg3
+        li      $v0, 4
+        syscall
+
+        lw      $a0, num2
+        li      $v0, 1
+        syscall
+
+        la      $a0, newline
+        li      $v0, 4
+        syscall
+        
+        li	$v0, 10
+        syscall
+
+-----
+# A demonstration of some simple MIPS instructions
+
+	# Declare main as a global function
+	.globl main 
+
+	# All program code is placed after the
+	# .text assembler directive
+	.text 		
+
+# The label 'main' represents the starting point
+main:
+	li $t2, 25		# Load immediate value (25) 
+	lw $t3, value		# Load the word stored in value (see bottom)
+	add $t4, $t2, $t3	# Add
+	sub $t5, $t2, $t3	# Subtract
+	sw $t5, Z		#Store the answer in Z (declared at the bottom)  
+
+	# Exit the program by means of a syscall.
+	# There are many syscalls - pick the desired one
+	# by placing its code in $v0. The code for exit is "10"
+	li $v0, 10 # Sets $v0 to "10" to select exit syscall
+	syscall # Exit
+
+	# All memory structures are placed after the
+	# .data assembler directive
+	.data
+
+	# The .word assembler directive reserves space
+	# in memory for a single 4-byte word (or multiple 4-byte words)
+	# and assigns that memory location an initial value
+	# (or a comma separated list of initial values)
+value:	.word 12
+Z:	.word 0
+
+---------------------------
+
+# Simple input/output in MIPS assembly
+
+	# Start .text segment (program code)
+	.text
+	
+	.globl	main
+main:
+	# Print string msg1
+	li	$v0,4		# print_string syscall code = 4
+	la	$a0, msg1	# load the address of msg
+	syscall
+
+	# Get input A from user and save
+	li	$v0,5		# read_int syscall code = 5
+	syscall	
+	move	$t0,$v0		# syscall results returned in $v0
+
+	# Print string msg2
+	li	$v0,4		# print_string syscall code = 4
+	la	$a0, msg2	# load the address of msg2
+	syscall
+
+	# Get input B from user and save
+	li	$v0,5		# read_int syscall code = 5
+	syscall	
+	move	$t1,$v0		# syscall results returned in $v0
+
+	# Math!
+	add	$t0, $t0, $t1	# A = A + B
+
+	# Print string msg3
+	li	$v0, 4
+	la	$a0, msg3
+	syscall
+
+	# Print sum
+	li	$v0,1		# print_int syscall code = 1
+	move	$a0, $t0	# int to print must be loaded into $a0
+	syscall
+
+	# Print \n
+	li	$v0,4		# print_string syscall code = 4
+	la	$a0, newline
+	syscall
+
+	li	$v0,10		# exit
+	syscall
+
+	# Start .data segment (data!)
+	.data
+msg1:	.asciiz	"Enter A:   "
+msg2:	.asciiz	"Enter B:   "
+msg3:	.asciiz	"A + B = "
+newline:   .asciiz	"\n"
+
+-------------------------
+
+# Simple routine to demo a loop
+# Compute the sum of N integers: 1 + 2 + 3 + ... + N
+
+	.text
+
+	.globl	main
+main:
+	# Print msg1
+	li	$v0,4		# print_string syscall code = 4
+	la	$a0, msg1	
+	syscall
+
+	# Get N from user and save
+	li	$v0,5		# read_int syscall code = 5
+	syscall	
+	move	$t0,$v0		# syscall results returned in $v0
+
+	# Initialize registers
+	li	$t1, 0		# initialize counter (i)
+	li	$t2, 0		# initialize sum
+
+	# Main loop body
+loop:	addi	$t1, $t1, 1	# i = i + 1
+	add	$t2, $t2, $t1	# sum = sum + i
+	beq	$t0, $t1, exit	# if i = N, continue
+	j	loop
+
+	# Exit routine - print msg2
+exit:	li	$v0, 4		# print_string syscall code = 4
+	la	$a0, msg2
+	syscall
+
+	# Print sum
+	li	$v0,1		# print_string syscall code = 4
+	move	$a0, $t2
+	syscall
+
+	# Print newline
+	li	$v0,4		# print_string syscall code = 4
+	la	$a0, lf
+	syscall
+	li	$v0,10		# exit
+	syscall
+
+	# Start .data segment (data!)
+	.data
+msg1:	.asciiz	"Number of integers (N)?  "
+msg2:	.asciiz	"Sum = "
+lf:     .asciiz	"\n"

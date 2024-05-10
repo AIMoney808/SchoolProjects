@@ -1,0 +1,74 @@
+
+Console output
+
++-------------------------------------------+
+|                 Math Tutor                |
++-------------------------------------------+
+
+Please enter your first name: Aaron M
+
+Hello Aaron M!
+You get 3 attempts per question.
+Now let the fun begin!
+
++-------------------------------------------+
+
+#1  What does 10*7 = 70
+    Correct :)
+
+Do you want another question?(y=yes | n=no): y
+
++-------------------------------------------+
+
+#2  What does 5+3 = 3
+    Sorry that was incorrect.
+    You have 2 attempts left.
+
+#2  What does 5+3 = 3
+    Sorry that was incorrect.
+    You have 1 attempts left.
+
+#2  What does 5+3 = 8
+    Correct :)
+
+Do you want another question?(y=yes | n=no): y
+
++-------------------------------------------+
+
+#3  What does 7+7 = 7
+    Sorry that was incorrect.
+    You have 2 attempts left.
+
+#3  What does 7+7 = 7
+    Sorry that was incorrect.
+    You have 1 attempts left.
+
+#3  What does 7+7 = 13
+    Sorry, you are out of attempts.
+    The correct answer is 14.
+
+Do you want another question?(y=yes | n=no): n
+
+==============================
+   Math Tutor Detail Report   
+==============================
+   Questions        Attempts
+----------------  ------------
+ 10 * 7   =  70        1
+  5 + 3   =   8        3
+  7 + 7   =  14     Incorrect
+
++-------------------------------------------+
+
+Total Questions =   3
+Total Incorrect =   1
+Total Correct   =   2
+Percent Correct =  66%
+
++-------------------------------------------+
+
+I hope you play this game again soon.
+Goodbye for now.
+ 
+
+

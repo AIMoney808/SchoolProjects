@@ -1,0 +1,44 @@
+{
+    "selection": {
+        "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "xsi:noNamespaceSchemaLocation": "movies.xsd",
+        "name": "Movies in the Selection",
+        "movie": [
+            {
+                "title": "Shrek",
+                "producer": "DreamWorks Animation",
+                "releaseDate": "2001-04-22",
+                "genre": "Comedy/Fantasy",
+                "runTime": "1h 30m"
+            },
+            {
+                "title": "The Matrix",
+                "producer": "Warner Bros. Pictures",
+                "releaseDate": "1999-03-31",
+                "genre": "Action/SciFi",
+                "runTime": "2h 16m"
+            },
+            {
+                "title": "Underworld",
+                "producer": "Sony Pictures",
+                "releaseDate": "2003-09-19",
+                "genre": "Action/Horror",
+                "runTime": "2h 1m"
+            },
+            {
+                "title": "Terminator 2: Judgment Day",
+                "producer": "TriStar Pictures",
+                "releaseDate": "1991-06-03",
+                "genre": "Action/Sci-fi",
+                "runTime": "2h 15m"
+            },
+            {
+                "title": "Back to the Future",
+                "producer": "Universal Pictures",
+                "releaseDate": "1985-07-03",
+                "genre": "Comedy/Sci-fi",
+                "runTime": "1h 56m"
+            }
+        ]
+    }
+}

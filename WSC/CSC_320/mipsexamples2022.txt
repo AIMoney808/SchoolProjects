@@ -1,0 +1,211 @@
+##Start
+.data
+	#Saving s registers to the stack
+	newLine: .asciiz "\n"
+	
+.text
+	main:
+		#use t register to callee saved - it will remain after function call (don't have to save to the stack)
+		#s register if using them - more local - have to be saved in function
+		addi $s0, $zero, 10
+		
+		jal increaseMyRegister #increase 10 by 30
+		
+		#print newline
+		li $v0,4
+		la $a0, newLine
+		syscall
+		
+		li $v0, 1
+		move $a0, $s0  #moves from s0 to a0  
+		syscall	#should keep value of 10 here 
+
+	#End of program
+	li $v0, 10
+	syscall
+	
+	increaseMyRegister:
+		#use stack sp to save it and allocate space to store our value (s registers) (like call by value) Keeps old value
+		addi $sp, $sp, -4 #-4 because storage of 4 bytes as an integer (stack goes down so negative)
+		sw $s0, 0($sp)  #0 is our offset to store in first location on stack  #use multiples of 4
+		
+		addi $s0, $s0, 30 #s0 = 10 + 30
+		
+		#print in function value
+		li $v0, 1
+		move $a0, $s0  #value here is now 40
+		syscall
+		#but here we have to load it from memory
+		lw $s0, 0($sp) #load from memory
+		addi $sp, $sp, 4 #now restore the stack - now old value is available in main 
+		
+		jr $ra #return 
+	
+	
+##end
+
+
+##start
+.data
+	#Nested procedures - remove duplication
+	newLine: .asciiz "\n"
+	
+.text
+	main:
+		#use t register to callee saved - it will remain after function call (don't have to save to the stack)
+		#s register if using them - more local - have to be saved in function
+		addi $s0, $zero, 10
+		
+		jal increaseMyRegister #increase 10 by 30
+		
+		#print newline
+		li $v0,4
+		la $a0, newLine
+		syscall
+		
+		jal printValue #nested procedure - need to know where address is to return to and want to go back to call 
+
+	#End of program
+	li $v0, 10
+	syscall
+	
+	increaseMyRegister:
+		#use stack sp to save it and allocate space to store our value (s registers) (like call by value) Keeps old value
+		addi $sp, $sp, -8 # change in nested procedure then add more below
+		sw $s0, 0($sp)  #0 is our offset to store in first location on stack  #use multiples of 4
+		sw $ra, 4($sp)
+		
+		addi $s0, $s0, 30 #s0 = 10 + 30
+		
+		#can't just call printValue again - get overflow error
+		#called nesting a procedure 
+		jal printValue
+		
+		#but here we have to load it from memory
+		lw $s0, 0($sp) #load from memory
+		#also add restore space
+		lw $ra, 4($sp)
+		addi $sp, $sp, 4 #now restore the stack - now old value is available in main 
+		
+		jr $ra #return but to main! 
+	
+	printValue:
+		#print in function value
+		li $v0, 1
+		move $a0, $s0  #value here is now 40
+		syscall
+		
+		jr $ra #return 
+	
+##end
+
+##start
+.data
+	#how to get user input
+	prompt: .asciiz "Enter your age: "
+	message: .asciiz "\n Your age is: "
+.text
+	#prompt user
+	li $v0, 4
+	la $a0, prompt
+	syscall
+	
+	#get user input
+	li $v0, 5 #code to get an integer from user
+	syscall
+	
+	#store result in t0
+	move $t0, $v0 #move it
+	
+	#display message
+	li $v0, 4
+	la $a0, message
+	syscall
+	
+	#now print age
+	li $v0, 1
+	move $a0, $t0
+	syscall
+	
+##end
+
+##start
+.data
+	#how to get user input (floats)
+	prompt:    .asciiz "Enter the value of PI: "
+	#no load immediate for float so creae a zero register for float
+	floatZero: .float 0.0
+.text
+	#get float zero
+	lwc1 $f4, floatZero
+	
+	#prompt user
+	li $v0, 4
+	la $a0, prompt
+	syscall
+	
+	#get user input
+	li $v0, 6 #code to get aa float from user store in f0
+	syscall
+	
+	#display value
+	li $v0, 2 #display a float
+	add.s $f12, $f0, $f4
+	syscall
+
+##end
+
+##start
+.data
+	#how to get user input (doubles)
+	prompt:    .asciiz "Enter the value of e(euler number 2.71): "
+.text
+	#Display prompt
+	li $v0, 4
+	la $a0, prompt
+	syscall
+	
+	#get double
+	li $v0, 7 #get double
+	syscall
+	
+	#double stored in f0 - special registers in copro 1 - take up two registers
+	#display double 
+	li $v0, 3
+	add.d $f12, $f0, $f10 #f1 is any empty register
+	syscall
+	
+
+##end
+
+##start
+
+.data
+	#how to get user input (doubles)
+	prompt:    .asciiz "Hello,  "
+	userInput: .space 20  #declaring an array due to characters - 20 characters
+.text
+	main:
+		li $v0, 8 #code for read user text
+		#pass an argument to sys call - to store input
+		la $a0, userInput
+		li $a1, 20 #max length of text
+		syscall
+		
+		#display hello
+		li $v0, 4
+		la $a0, prompt
+		syscall
+		
+		#display name
+		li $v0, 4
+		la $a0, userInput
+		syscall
+		
+	
+	
+	
+	#end of main
+	li $v0, 10
+	syscall
+#end

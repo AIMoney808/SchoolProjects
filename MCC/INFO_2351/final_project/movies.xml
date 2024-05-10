@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="movies.xsd">
+    <name>Movies in the Selection</name>
+    <movie>
+        <title>Shrek</title>
+        <producer>DreamWorks Animation</producer>
+        <releaseDate>2001-04-22</releaseDate>
+        <genre>Comedy/Fantasy</genre>
+        <runTime>1h 30m</runTime>
+    </movie>
+    <movie>
+        <title>The Matrix</title>
+        <producer>Warner Bros. Pictures</producer>
+        <releaseDate>1999-03-31</releaseDate>
+        <genre>Action/SciFi</genre>
+        <runTime>2h 16m</runTime>
+    </movie>
+    <movie>
+        <title>Underworld</title>
+        <producer>Sony Pictures</producer>
+        <releaseDate>2003-09-19</releaseDate>
+        <genre>Action/Horror</genre>
+        <runTime>2h 1m</runTime>
+    </movie>
+    <movie>
+        <title>Terminator 2: Judgment Day</title>
+        <producer>TriStar Pictures</producer>
+        <releaseDate>1991-06-03</releaseDate>
+        <genre>Action/Sci-fi</genre>
+        <runTime>2h 15m</runTime>
+    </movie>
+    <movie>
+        <title>Back to the Future</title>
+        <producer>Universal Pictures</producer>
+        <releaseDate>1985-07-03</releaseDate>
+        <genre>Comedy/Sci-fi</genre>
+        <runTime>1h 56m</runTime>
+    </movie>
+</selection>

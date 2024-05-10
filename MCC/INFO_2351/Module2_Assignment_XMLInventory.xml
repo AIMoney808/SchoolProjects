@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE house SYSTEM "mod3.dtd">
+<house>
+	<inventory>
+		<room>
+			<roomName>Living Room</roomName>
+			<item>
+				<category>Furniture</category>
+				<itemType>Recliner</itemType>
+				<itemColor>Brown Leather</itemColor>
+				<itemSize>Large</itemSize>
+				<quantity>1</quantity>
+			</item>
+			<item>
+				<category>Furniture</category>
+				<itemType>Recliner</itemType>
+				<itemColor>Gray Green</itemColor>
+				<itemSize>Large</itemSize>
+				<quantity>1</quantity>
+			</item>
+			<item>
+				<category>Furniture</category>
+				<itemType>Sofa</itemType>
+				<itemColor>Brown Leather</itemColor>
+				<itemSize>Large</itemSize>
+				<quantity>1</quantity>
+			</item>
+		</room>
+		<room>
+			<roomName>Dining Room</roomName>
+			<item>
+				<category>Furniture</category>
+				<itemType>Table</itemType>
+				<itemColor>Cherrywood</itemColor>
+				<itemSize>Large</itemSize>
+				<quantity>1</quantity>
+			</item>
+			<item>
+				<category>CupBoard</category>
+				<itemType>Wood</itemType>
+				<itemColor>Oak</itemColor>
+				<itemSize>Tall</itemSize>
+				<quantity>1</quantity>
+			</item>
+			<item>
+				<category>Furniture</category>
+				<itemType>Chair</itemType>
+				<itemColor>Medium Brown With Tan Seat</itemColor>
+				<itemSize>Medium</itemSize>
+				<quantity>6</quantity>
+			</item>
+		</room>
+		<room>
+			<roomName>Bedroom</roomName>
+			<item>
+				<category>Furniture</category>
+				<itemType>Shelf</itemType>
+				<itemColor>Press Board</itemColor>
+				<itemSize>Tall</itemSize>
+				<quantity>1</quantity>
+			</item>
+			<item>
+				<category>Furniture</category>
+				<itemType>Bed</itemType>
+				<itemColor>Black</itemColor>
+				<itemSize>Large</itemSize>
+				<quantity>1</quantity>
+			</item>
+			<item>
+				<category>Furniture</category>
+				<itemType>Chair</itemType>
+				<itemColor>Black</itemColor>
+				<itemSize>Medium</itemSize>
+				<quantity>1</quantity>
+			</item>
+			<item>
+				<category>Furniture</category>
+				<itemType>Desk</itemType>
+				<itemColor>Black</itemColor>
+				<itemSize>Medium</itemSize>
+				<quantity>1</quantity>
+			</item>
+		</room>
+	</inventory>
+</house>

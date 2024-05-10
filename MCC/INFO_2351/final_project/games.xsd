@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="library">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" maxOccurs="unbounded"/>
+                <xs:element ref="game" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="game">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="title"/>
+                <xs:element ref="publisher"/>
+                <xs:element ref="releaseDate"/>
+                <xs:element ref="genre"/>
+                <xs:element ref="value"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="title">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="5"/>
+                <xs:maxLength value="30"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="publisher" type="xs:string"/>
+    <xs:element name="releaseDate" type="xs:date"/>
+    <xs:element name="genre" type="xs:string"/>
+    <xs:element name="value">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="\$\d{1,4}\.\d{2}"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+</xs:schema>
